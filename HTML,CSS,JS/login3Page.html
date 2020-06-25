@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="loginFunc.js"></script>
+</head>
+
+<body style="background-color: rgba(235, 236, 247, 0.8)">
+    <div class="w3-container w3-blue">
+
+        <h2><i class="fa fa-id-card"></i></i> Patient Registration Form</h2>
+        <a href="login2Page.html" style="color:black"><i class="fa fa-arrow-left" aria-hidden="true"></i>  BACK </a>
+
+
+    </div>
+    <div class="progress">
+        <ul style="text-align:center">
+            <li>
+                <img src="step1.jpeg">
+                <p style="text-decoration-color:darkblue"><i class="fa fa-user" aria-hidden="true"></i> Personal Info</p>
+            </li>
+            <li>
+                <img src="step2.jpeg"><br>
+                <p><i class="fa fa-hospital-o" aria-hidden="true"></i> Registration</p>
+            </li>
+            <li>
+                <img src="step3.jpeg"><br>
+                <p><u><i class="fa fa-sign-in" aria-hidden="true"></i> Login</u></p>
+            </li>
+
+        </ul>
+    </div>
+    <div class="details">
+        <div class="form1">
+            <form name="loginFunc" onsubmit="return reg2Validation();" action="login4Page.html" method="post">
+                <div class="name">
+                    <label for="userid">User ID: <i class="fa fa-user-circle" aria-hidden="true"></i><span aria-hidden="true" class="required">*</span></label>
+                    <input style="width:400px;height:15px" aria-describedby="required-description" name="userid" id="userid" placeholder="Enter User ID" type="text" required/>
+                    <br>
+                    <br>
+                    <label for="Password">Password: <i class="fa fa-key" aria-hidden="true"></i><span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" style="width:390px;height:15px" name="Password" id="Password" placeholder="Enter Password" type="password" required/>
+                    <br>
+                    <br>
+                    <a href="alertpage.html" style="color:black"> Forgot Password? </a>
+                    <a href="alertpage.html" style="color:black"> Forgot Username? </a>
+
+
+                    <br>
+                    <center>
+                        <input type="submit"></input>
+                    </center>
+
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <p style="text-align:left" aria-hidden="true" id="required-description">
+                    <span class="required">*</span>Required field
+                </p>
+                <br>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

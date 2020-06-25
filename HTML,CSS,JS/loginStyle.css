@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    float: left;
+    padding-right: 4%;
+}
+
+.required {
+    color: red;
+}
+
+#input default {
+    margin-bottom: 20px;
+}
+
+.body {
+    background-color: rgba(18, 110, 214, 0.8);
+}
+
+.progress {
+    margin: 30px auto;
+}
+
+.progress img {
+    width: 100px;
+}
+
+.ul1 {
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    width: 350px;
+}
+
+.details {
+    width: auto;
+    padding: 0 0 0;
+    margin: 10px;
+}
+
+.form input[type="submit"] {
+    width: 100px;
+    margin: 12px;
+    height: 35px;
+    background: lightgreen;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: rgba(26, 109, 204, 0.8);
+    width: auto;
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 300px;
+    text-align: center;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 300px;
+    height: 10px;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form1 input[type="submit"] {
+    width: 100px;
+    margin: 12px;
+    height: 35px;
+    background: lightgreen;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.form1 {
+    position: relative;
+    z-index: 1;
+    background: rgba(26, 109, 204, 0.8);
+    width: auto;
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    padding-top: 60px;
+    padding-right: 250px;
+    padding-bottom: 40px;
+    padding-left: 700px;
+}
+
+.form1 input {
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 300px;
+    height: 10px;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form1 button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}

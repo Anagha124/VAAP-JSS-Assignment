@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="loginFunc.js"></script>
+</head>
+
+<body style="background-color: rgba(235, 236, 247, 0.8)">
+    <div class="w3-container w3-blue">
+
+        <h2><i class="fa fa-id-card"></i></i> Registration Form</h2>
+    </div>
+    <div class="progress">
+        <ul style="text-align:center">
+            <li>
+                <img src="step1.jpeg">
+                <p><u style="text-decoration-color:darkblue"><i class="fa fa-user" aria-hidden="true"></i> Personal Info</u></p>
+            </li>
+            <li>
+                <img src="step2.jpeg"><br>
+                <p><i class="fa fa-hospital-o" aria-hidden="true"></i>Registration</p>
+            </li>
+            <li>
+                <img src="step3.jpeg"><br>
+                <p><i class="fa fa-sign-in" aria-hidden="true"></i>Login</p>
+            </li>
+
+        </ul>
+    </div>
+    <div class="details">
+        <div class="form">
+            <form name="loginFunc" onsubmit="return formValidation();" action="login2Page.html" method="post">
+                <div class="name">
+                    <label for="First_Name">First Name: <i class="fa fa-user-circle" aria-hidden="true"></i><span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" name="First_Name" id="First_Name" placeholder="Enter First Name" type="text" required/>
+                    <label for="Middle_Name">Middle Name:</label>
+                    <input name="Middle_Name" id="Middle_Name" placeholder="Enter Middle Name" type="text" />
+                    <label for="Last_Name">Last Name:<span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" name="Last_Name" id="Last_Name" placeholder="Enter Last Name" type="text" required />
+                    <br>
+                    <br>
+                    <label for="Address">Address: <i class="fa fa-address-book-o" aria-hidden="true"></i><span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" style="width:1125px;height:45px" name="Address" id="Address" placeholder="Enter Address" type="text" required />
+                    <br>
+                    <br>
+                    <label for="cities">City:<span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" style="width:400px;height:15px" list="cities" name="cities" required/>
+                    <datalist id="cities">
+                    <option value="Amravati">
+                    <option value="Bengaluru">
+                    <option value="Chennai">
+                    <option value="Gadwal">
+                    <option value="Hindupur">
+                    <option value="Hyderabad">
+                    <option value="Kadiri">
+                    <option value="Kochi">
+                    <option value="Kolar">
+                    <option value="Munnar">
+                    <option value="Mysore">
+                    <option value="Nizambad">
+                    <option value="Palani">
+                    <option value="Salem">
+                    <option value="Udupi">
+                    <option value="Varkala">
+                    <option value="Warangal">
+
+                    </datalist>
+                    <br>
+                    <br>
+                    <label for="zip_code">Zip-Code:<span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" style="width:350px;height:15px" name="zip_code" id="zip_code" placeholder="Enter Zip Code" type="text" required />
+                    <br>
+                    <br>
+                    <label for="states">State:<span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" style="width:390px;height:15px" list="states" name="states" required/>
+                    <datalist id="states">
+                    <option value="Andhra Pradesh">
+                    <option value="Karnataka">
+                    <option value="Kerala">
+                    <option value="Tamil Nadu">
+                    <option value="Telangana">
+                    </datalist>
+                    <br>
+                    <br>
+                    <label for="country">Country: <i class="fa fa-globe" aria-hidden="true"></i><span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" style="width:350px;height:15px" list="country" name="country" required/>
+                    <datalist id="country">
+                    <option value="India">
+                    </datalist>
+                    <br>
+                    <br>
+                    <label for="email">Email: <i class="fa fa-envelope" aria-hidden="true"></i><span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" style="width:350px;height:15px" name="email" id="email" placeholder="Enter Email address" type="text" required />
+                    <br>
+                    <br>
+                    <label for="occupation">Occupation: <i class="fa fa-briefcase" aria-hidden="true"></i></label>
+                    <input style="width:350px;height:15px" name="occupation" id="occupation" placeholder="Enter Occupation" type="text" />
+                    <br>
+                    <br>
+                    <label for="sex">Gender: <span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" style="width:350px;height:15px" list="sex" name="sex" required/>
+                    <datalist id="sex">
+                    <option value="Female">
+                    <option value="Male">
+                    <option value="others">
+                    </datalist>
+                    <br>
+                    <br>
+                    <label for="phone_no">Mobile Number: <i class="fa fa-mobile" aria-hidden="true"></i><span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" style="width:350px;height:15px" name="phone_no" id="phone_no" type="text" required />
+                    <label for="tele">Telephone: <i class="fa fa-phone" aria-hidden="true"></i></label>
+                    <input name="tele" id="tele" style="width:350px;height:15px" type="text" />
+                    <br>
+                    <input type="submit"></input>
+
+
+
+
+
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br>
+                <p style="text-align:left" aria-hidden="true" id="required-description">
+                    <span class="required">*</span>Required field
+                </p>
+                <br>
+
+
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

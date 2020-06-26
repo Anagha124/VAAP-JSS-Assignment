@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="loginFunc.js"></script>
+</head>
+
+<body style="background-color: rgba(235, 236, 247, 0.8)">
+    <div class="w3-container w3-blue">
+
+        <h2><i class="fa fa-id-card"></i></i> Registration Form</h2>
+        <a href="login3Page.html" style="color:black"><i class="fa fa-arrow-left" aria-hidden="true"></i> BACK </a>
+
+    </div>
+    <div class="progress">
+        <ul style="text-align:center">
+            <li>
+                <img src="step1.jpeg">
+                <p style="text-decoration-color:darkblue"><i class="fa fa-user" aria-hidden="true"></i> Personal Info</p>
+            </li>
+            <li>
+                <img src="step2.jpeg"><br>
+                <p><i class="fa fa-hospital-o" aria-hidden="true"></i>Registration</p>
+            </li>
+            <li>
+                <img src="step3.jpeg"><br>
+                <p><i class="fa fa-sign-in" aria-hidden="true"></i>Login</p>
+            </li>
+
+        </ul>
+    </div>
+    <div class="details">
+        <div class="form1">
+            <form name="loginFunc" onsubmit="return alertPage();" action="login3Page.html" method="post">
+                <div class="name">
+                    <label for="email">Email: <i class="fa fa-envelope" aria-hidden="true"></i><span aria-hidden="true" class="required">*</span></label>
+                    <input aria-describedby="required-description" style="width:350px;height:15px" name="email" id="email" placeholder="Enter Email address" type="text" required />
+                    <br>
+                    <br>
+                    <br>
+                    <center>
+                        <input type="submit"></input>
+                    </center>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
